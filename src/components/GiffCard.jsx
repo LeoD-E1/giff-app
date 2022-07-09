@@ -7,6 +7,9 @@ const GiffCard = ({ obj }) => {
       <div className="inner-card">
         <div className="overlay"></div>
         <img src={obj.url} alt={`${obj.title} giphy`} />
+        <div className="content">
+          <p className="title">{obj.title}</p>
+        </div>
       </div>
     </div>
   );
