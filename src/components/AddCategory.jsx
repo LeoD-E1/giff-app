@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./styles/style.css";
 
 const AddCategory = ({ addCategories }) => {
   const [inputValue, setInputValue] = useState("");
@@ -19,8 +20,9 @@ const AddCategory = ({ addCategories }) => {
   return (
     <form onSubmit={handleSubmit}>
       <input
-        type="text"
-        placeholder="Buscar Giff"
+        className="input-search"
+        type="search"
+        placeholder="Search category"
         value={inputValue}
         onChange={(e) => handleChange(e)}
       />

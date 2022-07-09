@@ -71,3 +71,33 @@
 .card_item:hover .overlay{
   background: rgba(0, 0, 0, 0.6);
 }
+
+.history-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 10px ;
+}
+
+.history-container .badge {
+  padding: 10px 20px;
+  background-color: #333;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 25px;
+}
+
+/* Searchbar */
+
+.input-search {
+  padding: 10px 30px;
+  outline: none;
+  margin: 20px;
+  font-size: larger;
+  border: 1px solid;
+  font-weight: bolder;
+}
+
+.input-search:focus {
+  border: 1px solid orangered;
+}
