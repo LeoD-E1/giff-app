@@ -104,3 +104,17 @@
 .input-search:focus {
   border: 1px solid orangered;
 }
+
+.card_item .content .delete-element {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+.card_item:hover .content .delete-element {
+  display: block;
+}

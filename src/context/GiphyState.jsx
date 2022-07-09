@@ -15,12 +15,17 @@ const GiphyState = (props) => {
     setLoading(false);
   };
 
+  const deleteCategory = (id) => {
+    setGiphies([...giphies.filter((g) => g.id !== id)]);
+  };
+
   return (
     <GiphyContext.Provider
       value={{
         history,
         loading,
         searchCategory,
+        deleteCategory,
         giphies,
       }}
     >
