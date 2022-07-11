@@ -3,6 +3,7 @@ import AddCategory from "../components/AddCategory";
 import GiffGrid from "../components/GiffGrid";
 import HistorySearch from "../components/HistorySearch";
 import { GiphyContext } from "../context/GiphyContext";
+import "./home.css";
 
 const Home = () => {
   const { searchCategory, giphies, loading, history } =
@@ -13,7 +14,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div className="home-container">
       <h2>GiffApp</h2>
       {loading ? (
         <h3>Loading...</h3>
@@ -24,7 +25,7 @@ const Home = () => {
           <GiffGrid category={giphies} />
         </>
       )}
-    </>
+    </div>
   );
 };
 
